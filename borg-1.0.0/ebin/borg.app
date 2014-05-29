@@ -10,6 +10,6 @@
 	     borg_sup
 	    ]},
   {registered, [borg_sup]},
-  {applications, [kernel, stdlib]},
+  {applications, [kernel, stdlib, sasl, mnesia]},
   {mod, {borg_app, []}}
  ]}.
