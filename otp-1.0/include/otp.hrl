@@ -1,0 +1,1 @@
+-record(otp_server, {count = 0, state = "Ready"}).
