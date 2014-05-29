@@ -7,6 +7,7 @@
 	     borg_events,
 	     borg_server, 
 	     borg_server_sup,
+	     borg_store,
 	     borg_sup
 	    ]},
   {registered, [borg_sup]},
