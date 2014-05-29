@@ -1,4 +1,4 @@
--module(otp_event_logger).
+-module(borg_event_logger).
 
 -behaviour(gen_event).
 
@@ -21,10 +21,10 @@
 -record(state, {}).
 
 add_handler() ->
-    otp_events:add_handler(?MODULE, []).
+    borg_events:add_handler(?MODULE, []).
 
 delete_handler() ->
-    otp_events:delete_handler(?MODULE, []).
+    borg_events:delete_handler(?MODULE, []).
 
 init([]) ->
     {ok, #state{}}.

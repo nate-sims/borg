@@ -1,4 +1,4 @@
--module(otp_server).
+-module(borg_server).
 
 -behaviour(gen_server).
 

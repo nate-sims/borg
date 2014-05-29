@@ -1,4 +1,4 @@
--module(otp_events).
+-module(borg_events).
 
 -export([
 	 start_link/0,

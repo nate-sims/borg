@@ -1,4 +1,4 @@
--module(otp_app).
+-module(borg_app).
 
 -behaviour(application).
 
@@ -8,7 +8,7 @@
 	 ]).
 
 start(_Type, _StartArgs) ->
-    case otp_super:start_link() of
+    case borg_sup:start_link() of
 	{ok, Pid} ->
 	    {ok,Pid};
 	Other ->
