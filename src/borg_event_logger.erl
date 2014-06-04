@@ -2,6 +2,8 @@
 
 -behaviour(gen_event).
 
+-include_lib("include/borg.hrl").
+
 %% API
 -export([
 	 add_handler/0,
@@ -17,8 +19,6 @@
 	 code_change/3,
 	 terminate/2
 	 ]).
-
--record(state, {}).
 
 add_handler() ->
     borg_events:add_handler(?MODULE, []).

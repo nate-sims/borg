@@ -2,6 +2,8 @@
 
 -behaviour(supervisor).
 
+-include_lib("include/borg.hrl").
+
 %% API
 -export([
 	 start_link/0

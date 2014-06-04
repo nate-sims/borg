@@ -1,8 +1,12 @@
 -module(borg_store).
 
+-include_lib("include/borg.hrl").
+
 %% Module Functions
 -export([
-	 init/0
+	 init/0,
+	 start/0,
+	 stop/0
 	 ]).
 
 %% Store Functions
@@ -15,7 +19,13 @@
 
 
 init() ->
-    ok.
+    mnesia:create_table(borg, [{attributes, record_info(fields, borg)}]).
+
+start() ->
+    mnesia:start().
+
+stop() ->
+    mnesia:stop().
 
 add(_Node) ->
    ok.
