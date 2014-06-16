@@ -2,7 +2,7 @@
 
 -behaviour(application).
 
--include_lib("include/borg.hrl").
+-include_lib("../include/borg.hrl").
 
 -export([
 	 start/2,

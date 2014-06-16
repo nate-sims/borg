@@ -2,7 +2,7 @@
 
 -behaviour(supervisor).
 
--include_lib("include/borg.hrl").
+-include_lib("../include/borg.hrl").
 
 %% API
 -export([

@@ -1,6 +1,6 @@
 -module(borg_events).
 
--include_lib("include/borg.hrl").
+-include_lib("../include/borg.hrl").
 
 -export([
 	 start_link/0,

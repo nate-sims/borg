@@ -2,7 +2,7 @@
 
 -behaviour(gen_event).
 
--include_lib("include/borg.hrl").
+-include_lib("../include/borg.hrl").
 
 %% API
 -export([

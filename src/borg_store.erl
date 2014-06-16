@@ -1,6 +1,6 @@
 -module(borg_store).
 
--include_lib("include/borg.hrl").
+-include_lib("../include/borg.hrl").
 
 %% Module Functions
 -export([
