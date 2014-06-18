@@ -65,5 +65,5 @@ code_change(_OldVsn, State, _Extra) ->
 
 node_name('nonode@nohost') ->
     net_kernel:start(['borg', longnames]);
-node_name(_Name) ->
+node_name(_) ->
     ok.
